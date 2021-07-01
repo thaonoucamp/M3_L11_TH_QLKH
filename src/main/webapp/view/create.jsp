@@ -10,6 +10,11 @@
 <html>
 <head>
     <title>Create new customer</title>
+    <style>
+        .message {
+            color: greenyellow;
+        }
+    </style>
 </head>
 <body>
 <h1>Create new customer</h1>
@@ -23,9 +28,9 @@
 <p>
     <a href="/ServletCustomer">Back to customer list</a>
 </p>
-<form action="" method="post">
+<form method="post">
     <fieldset>
-        <legend>Customer infomation</legend>
+        <legend>Customer information</legend>
         <tr>
             <td>Name :</td>
             <td><input type="text" name="name" id="name"></td>

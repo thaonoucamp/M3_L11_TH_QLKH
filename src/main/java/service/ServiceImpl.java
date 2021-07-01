@@ -22,7 +22,7 @@ public class ServiceImpl implements IService {
 
     @Override
     public List<Customer> findAll() {
-        return new ArrayList<>();
+        return new ArrayList<>(customers.values());
     }
 
     @Override

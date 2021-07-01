@@ -16,7 +16,7 @@
 <p>
     <a href="/ServletCustomer?action=create">Create new customer</a>
 </p>
-<table border="1px solid">
+<table border="1">
     <tr>
         <td>Name</td>
         <td>Email</td>
@@ -24,7 +24,7 @@
         <td>Edit</td>
         <td>Delete</td>
     </tr>
-    <c:forEach items='${requestScope["customer"]}' var="customer">
+    <c:forEach items='${customer}' var="customer">
         <tr>
             <td>
                 <a href="/ServletCustomer?action=view&id=${customer.id}">${customer.name}</a>
